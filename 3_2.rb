@@ -6,7 +6,7 @@ inputs = File.read('3.input').split("\n").map(&:chars)
 def column_counts(columns, high: true)
   counts = columns.tally
 
-  return high ? '1' : '0' if counts['1'] == counts['0']
+  return high ? '1' : '0' if counts.values.uniq.one?
 
   if high
     counts.key(counts.values.max)
