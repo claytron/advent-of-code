@@ -2,6 +2,5 @@
 
 source 'https://rubygems.org'
 
-gem 'pry'
-gem 'pry-byebug'
+gem "debug", ">= 1.0.0"
 gem 'rubocop'
