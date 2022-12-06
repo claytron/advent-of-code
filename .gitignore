@@ -1,3 +1,5 @@
+*.my.input
+
 *.gem
 *.rbc
 /.config
